@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kwalker/.oh-my-zsh
+  export ZSH=/home/`whoami`/.oh-my-zsh
   export KEYTIMEOUT=1
 
 # Set name of the theme to load.
