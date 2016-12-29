@@ -1,0 +1,7 @@
+set hlsearch
+set ic
+set showmode
+set incsearch
+set clipboard=unnamedplus
+set vim-surround
+nnoremap <CR> :noh<CR><CR>
