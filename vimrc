@@ -17,6 +17,6 @@ set mousehide
 set shiftwidth=2
 set clipboard=unnamedplus
 nnoremap <CR> :noh<CR><CR>
-map <Leader>xf :%!tidy --input-xml true --indent yes -quiet<CR>:set ft=xml<CR>
+map <Leader>xf :%!tidy -xml -i -w -quiet<CR>:set ft=xml<CR>
 "colorscheme desert
 hi CursorLine cterm=NONE ctermbg=darkgrey
