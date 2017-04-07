@@ -20,3 +20,4 @@ nnoremap <CR> :noh<CR><CR>
 map <Leader>xf :%!tidy -xml -i -w -quiet<CR>:set ft=xml<CR>
 "colorscheme desert
 hi CursorLine cterm=NONE ctermbg=darkgrey
+inoremap <CR> <Esc>
