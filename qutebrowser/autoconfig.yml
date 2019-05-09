@@ -13,3 +13,5 @@ global:
   fonts.statusbar: 16pt monospace
   fonts.tabs: 14pt monospace
   tabs.position: top
+  tabs.title.format: '{title}'
+  tabs.title.format_pinned: null
