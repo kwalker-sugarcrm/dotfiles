@@ -15,8 +15,9 @@ set cursorline
 set expandtab
 set mousehide
 set shiftwidth=2
-set clipboard=unnamedplus
+set clipboard=unnamed
+set background=light
 nnoremap <CR> :noh<CR><CR>
 map <Leader>xf :%!tidy -xml -i -w -quiet<CR>:set ft=xml<CR>
-"colorscheme desert
-hi CursorLine cterm=NONE ctermbg=darkgrey
+colorscheme solarized
+hi CursorLine cterm=NONE ctermbg=lightgrey

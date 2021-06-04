@@ -2,7 +2,15 @@ set hlsearch
 set ic
 set showmode
 set incsearch
+set surround
 set clipboard=unnamedplus
 set vim-surround
 nnoremap <CR> :noh<CR><CR>
 set ideajoin
+let mapleader = "\"
+map <M-F11> :action RunMenu<CR>
+map <A-1> :action SelectIn<CR>
+map <C-a> :action<Space> 
+map <M-F10> :action ToolWindowsGroup<CR>
+map <leader>cc :action CheckStyleCurrentFileAction<CR>
+map <leader>cm :action CheckStyleModifiedFilesAction<CR>
