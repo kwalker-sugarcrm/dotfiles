@@ -10,6 +10,11 @@ export ZSH=/Users/`whoami`/.oh-my-zsh
 export KEYTIMEOUT=1
 export TERM="xterm-256color"
 
+export IDM_IT_PASSWORD=q7Ry3QB4DvW7E9v
+export us_west_2_IDM_DISCOVER_CLIENT_JSON=`cat ~/it-client.json`
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
+export CONFLUENT_HOME=/Users/kurtis.walker/confluent/confluent-5.5.1
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -24,7 +29,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -65,6 +70,7 @@ plugins=(git vi-mode zsh-syntax-highlighting kubectl docker aws)
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export PATH=$PATH:/Users/kurtis.walker/bin:$CONFLUENT_HOME/bin
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -94,6 +100,18 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 DEFAULT_USER=`whoami`
 setopt extendedglob 
+# setopt menu_complete
+unsetopt list_beep
+alias vim="/usr/local/bin/vim"
+alias kns="k config set-context --current --namespace=corvana"
+alias sks="scloud kubeconfig setup --provider=okta"
+alias kdev="k config use-context k8s-usw2-dev && k config set-context --current --namespace=corvana"
+alias kqa="k config use-context k8s-usw2-qa && k config set-context --current --namespace=corvana"
+alias kstg="k config use-context k8s-usw2-stg && k config set-context --current --namespace=corvana"
+alias kusw2="k config use-context k8s-usw2-prod && k config set-context --current --namespace=corvana"
+alias keuc1="k config use-context k8s-euc1-prod && k config set-context --current --namespace=corvana"
+alias kapse2="k config use-context k8s-apse2-prod && k config set-context --current --namespace=corvana"
+alias kmk="minikube update-context && k config set-context --current --namespace=corvana"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -20,4 +20,4 @@ set background=light
 nnoremap <CR> :noh<CR><CR>
 map <Leader>xf :%!tidy -xml -i -w -quiet<CR>:set ft=xml<CR>
 colorscheme solarized
-hi CursorLine cterm=NONE ctermbg=lightgrey
+hi CursorLine cterm=NONE "ctermbg=lightgrey
